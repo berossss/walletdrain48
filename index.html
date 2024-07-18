@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Wallet</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #connectButton {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #viewTransaction {
+            display: none;
+            margin-top: 20px;
+            color: green;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="connectButton">Connect Wallet</button>
+        <div id="viewTransaction">View Transaction</div>
+    </div>
+
+    <!-- Load Solana web3.js and wallet adapter libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.66.0/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/wallet-adapter-base@0.7.2/dist/index.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/wallet-adapter-phantom@0.8.5/dist/index.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
